@@ -3,11 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Birthday</title>
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <h1>oi</h1>
+    <section class="hero">
+        <div class="container">
+            <div class="hero__header">
+                <h1>Aniversário do Rodolfo Suaki</h1>
+                <h2>O aniversário acontecerá em</h2>
+                <span id="contador"></span>
+            </div>
+            <div class="hero__event">
+                <ul class="hero__event__items">
+                    <li class="hero__event__items__location">
+                        <b>Localização</b>
+                        Av. Lorem ipsum dolor, 1020
+                    </li>
+                    <li class="hero__event__items__when">
+                        <b>Quando</b>
+                        27/07/2024 às 20hrs
+                    </li>
+                    <li class="hero__event__items__reservation">
+                        <button type="submit">Confirmar presença</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="attractions">
+        <div class="container">
+            <div class="attractions__items">
+                <ul data-aos="fade-right" class="attractions__items__dinner">
+                    <li>
+                        <img src="./images/food.jpg" alt="">
+                    </li>
+                    <li class="attractions__items__dinner__description">
+                        <h4>Jantar</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et sint qui velit cupiditate soluta natus nostrum saepe eligendi eveniet. Porro, sit. Quia corporis similique officia perferendis! Suscipit corrupti unde nisi necessitatibus ex fugit ut officiis, sunt ab deserunt modi cupiditate quod repellendus porro earum eos? Eos ipsum earum, asperiores, repellendus ad libero id similique dicta possimus laudantium distinctio. Excepturi, culpa?</p>
+                    </li>
+                </ul>
+                <ul data-aos="fade-left" class="attractions__items__karaoke">
+                    <li>
+                        <img src="./images/karaoke.jpg" alt="">
+                    </li>
+                    <li class="attractions__items__karaoke__description">
+                        <h4>Karaokê</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et sint qui velit cupiditate soluta natus nostrum saepe eligendi eveniet. Porro, sit. Quia corporis similique officia perferendis! Suscipit corrupti unde nisi necessitatibus ex fugit ut officiis, sunt ab deserunt modi cupiditate quod repellendus porro earum eos? Eos ipsum earum, asperiores, repellendus ad libero id similique dicta possimus laudantium distinctio. Excepturi, culpa?</p>
+                    </li>
+                </ul>
+                <ul data-aos="fade-right" class="attractions__items__games">
+                    <li>
+                        <img src="./images/games.jpg" alt="">
+                    </li>
+                    <li class="attractions__items__games__description">
+                        <h4>Games</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et sint qui velit cupiditate soluta natus nostrum saepe eligendi eveniet. Porro, sit. Quia corporis similique officia perferendis! Suscipit corrupti unde nisi necessitatibus ex fugit ut officiis, sunt ab deserunt modi cupiditate quod repellendus porro earum eos? Eos ipsum earum, asperiores, repellendus ad libero id similique dicta possimus laudantium distinctio. Excepturi, culpa?</p>
+                    </li>
+                </ul>
+                <ul data-aos="fade-left" class="attractions__items__party">
+                    <li>
+                        <img src="./images/party.jpg" alt="">
+                    </li>
+                    <li class="attractions__items__party__description">
+                        <h4>Party</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et sint qui velit cupiditate soluta natus nostrum saepe eligendi eveniet. Porro, sit. Quia corporis similique officia perferendis! Suscipit corrupti unde nisi necessitatibus ex fugit ut officiis, sunt ab deserunt modi cupiditate quod repellendus porro earum eos? Eos ipsum earum, asperiores, repellendus ad libero id similique dicta possimus laudantium distinctio. Excepturi, culpa?</p>              
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <br>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

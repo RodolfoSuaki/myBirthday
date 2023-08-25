@@ -1,0 +1,77 @@
+@use 'variables';
+
+.attractions{
+    padding: 25px;
+    background: -webkit-linear-gradient(top, #c19ef0, #1e615f);
+    background: -moz-linear-gradient(top, #c19ef0, #1e615f);
+    background: -ms-linear-gradient(top, #c19ef0, #1e615f);
+    background: -o-linear-gradient(top, #c19ef0, #1e615f);
+    background: linear-gradient(to bottom, #c19ef0, #1e615f);
+
+    &__items{
+        
+        &__dinner,
+        &__games{
+            display: flex;
+            padding-top: 50px;
+            justify-content: space-between;
+
+            @media (max-width: 640px){
+                display:block;
+            }
+            
+            &__description{
+                padding-left: 40px;
+                text-align: justify;
+                line-height: 30px;
+            }
+
+            li{
+                h4{
+                    padding-bottom: 10px;
+                }
+                img{
+                    height: 265px;
+                    width: 350px;
+                    border: 10px, solid, black;
+                }
+            }
+            
+        }
+
+        &__karaoke,
+        &__party{
+            display:flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            padding-top: 50px;
+            
+            
+            @media (max-width: 640px){
+                display:block;
+            }
+
+            &__description{
+                padding-right: 40px;
+                text-align: justify;
+                line-height: 30px;
+                
+                @media (max-width: 640px){
+                    display:block;
+                    padding-left: 40px;
+                    padding-right: 0px;
+                }
+            }
+
+            li{
+                h4{
+                    padding-bottom: 10px;
+                }
+                img{
+                    height: 265px;
+                    width: 350px;
+                }
+            }
+        }
+    }
+}
